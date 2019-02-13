@@ -1,0 +1,25 @@
+{
+    first_name: "John",
+    last_name: "Doe",
+    memberships: ["mem1", "mem2"],
+    address: {
+        street: "Central Street, Sector 11 L, North Karachi",
+        city: "Karachi"
+    },
+    contacts: [
+        {name: "Brad", relationship: "friend"}
+    ]
+}
+
+db.createUser({
+    user: "Shahrukh Azeem",
+    pwd: "july2nd900",
+    roles: ["readWrite", "dbAdmin"]
+});
+
+db.users.insert({
+    first_name: "Anna",
+    last_name: "Pokinchi",
+    password: "pock0101",
+    memberships: ["mem1", "mem2"],
+})
